@@ -43,6 +43,8 @@ Pre-Processing Methods Studied:
 ----------------------------------------------------------------------------------------
 
 The pipeline is as:
+
+
 Step 1: Download the DataSets (from their owner sites) and use the scripts in the dataset_helper_scripts directory to convert all to greyscale and change extensions like (.gif and .pgm) to common extensions. Also arrange all images of a dataset in a single folder using these scripts.
 
 Step 2: Arrange the data   directory like shown
