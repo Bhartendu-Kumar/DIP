@@ -1,0 +1,15 @@
+
+ writing outputs of bilateral_sigmaSpatial_1
+Total time bilateralsigmaSpatial_1 = 2795.91563233
+
+ writing outputs of bilateral_sigmaSpatial_3
+Total time bilateralsigmaSpatial_3 = 10069.642222365
+
+ writing outputs of bilateral_sigmaSpatial_3.5
+Total time bilateralsigmaSpatial_3.5 = 13952.352281435
+
+ writing outputs of bilateral_sigmaSpatial_4
+Total time bilateralsigmaSpatial_4 = 16199.912093079
+
+ writing outputs of bilateral_sigmaSpatial_4.5
+OliA_02215_f_20_i_fr_nc_no_2016_2_e0_nl_o.jpg is not pre_processedMerM_01471_f_20_i_fr_nc_no_2016_2_e0_nl_o.jpg is not pre_processedMerM_01471_f_20_i_fr_nc_no_2016_2_e0_nl_o.jpg is not convertedBelA_00727_m_21_i_nf_nc_no_2015_1_e0_nl_o.jpg is not convertedMohG_01834_m_32_i_fr_nc_no_2016_2_e0_nl_o.jpg is not convertedMeiH_01356_f_20_i_nf_nc_sd_2015_1_e0_nl_o.jpg is not convertedMotM_01996_m_21_o_fr_nc_sd_2015_1_e0_nl_o.jpg is not convertedNasH_02033_m_25_o_nf_nc_no_2013_1_e0_nl_o.jpg is not convertedMerK_01389_f_20_i_nf_nc_no_2015_1_e0_nl_o.jpg is not convertedBahA_00594_m_36_i_fr_nc_no_2016_2_e0_nl_o.jpg is not pre_processed
