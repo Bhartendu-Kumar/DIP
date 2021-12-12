@@ -1,0 +1,15 @@
+
+ writing outputs of HOMO_cutoffFrequency_10
+Total time HOMOcutoffFrequency_10 = 1152.159683641
+
+ writing outputs of HOMO_cutoffFrequency_15
+Total time HOMOcutoffFrequency_15 = 955.527734553
+
+ writing outputs of HOMO_cutoffFrequency_20
+Total time HOMOcutoffFrequency_20 = 937.194142634
+
+ writing outputs of HOMO_cutoffFrequency_25
+Total time HOMOcutoffFrequency_25 = 915.773671226
+
+ writing outputs of HOMO_cutoffFrequency_30
+cat_0800.jpg is not converted
