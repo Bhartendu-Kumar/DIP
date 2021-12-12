@@ -1,2 +1,2 @@
 # DIP
-DIP projects
+DIP project
