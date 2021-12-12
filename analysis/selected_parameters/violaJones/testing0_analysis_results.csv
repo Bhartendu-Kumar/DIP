@@ -1,0 +1,9 @@
+preProcessing,dataset,TP,FP,FN,precision,recall,avg_pre_processing_time,avg_classification_time,avg_total_time,avg_level_weights,std_level_weights
+ViolaJones,BioID,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ViolaJones,SoF,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ViolaJones,mit_cbcl,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ViolaJones,caltech,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ViolaJones,yale,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ViolaJones,orl,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ViolaJones,TotalFace,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+ViolaJones,NonFace,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
