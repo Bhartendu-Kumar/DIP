@@ -1,0 +1,3 @@
+
+ writing outputs of BDA_
+Total time BDA = 2990.782365043
