@@ -1,0 +1,33 @@
+
+ writing outputs of SSR__sigma_1
+Total time SSR_sigma_1 = 632.849026473
+
+ writing outputs of SSR__sigma_36
+Total time SSR_sigma_36 = 1079.217931867
+
+ writing outputs of SSR__sigma_71
+Total time SSR_sigma_71 = 1101.767974699
+
+ writing outputs of SSR__sigma_106
+Total time SSR_sigma_106 = 1065.01357776
+
+ writing outputs of SSR__sigma_141
+Total time SSR_sigma_141 = 993.764389188
+
+ writing outputs of SSR__sigma_176
+Total time SSR_sigma_176 = 1209.924868685
+
+ writing outputs of SSR__sigma_211
+Total time SSR_sigma_211 = 1279.04808164
+
+ writing outputs of SSR__sigma_246
+Total time SSR_sigma_246 = 1302.891636247
+
+ writing outputs of SSR__sigma_281
+Total time SSR_sigma_281 = 1274.139776137
+
+ writing outputs of SSR__sigma_316
+Total time SSR_sigma_316 = 1310.055151744
+
+ writing outputs of SSR__sigma_351
+Total time SSR_sigma_351 = 1291.028622701

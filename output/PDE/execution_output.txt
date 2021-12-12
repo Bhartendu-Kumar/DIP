@@ -1,0 +1,18 @@
+
+ writing outputs of PDE_log
+Total time PDElog = 989.554616442
+
+ writing outputs of PDE_hist_eq
+Total time PDEhist_eq = 1128.450740545
+
+ writing outputs of PDE_clip_limit_2
+Total time PDEclip_limit_2 = 1194.582970347
+
+ writing outputs of PDE_clip_limit_3
+Total time PDEclip_limit_3 = 1233.352354737
+
+ writing outputs of PDE_clip_limit_4
+Total time PDEclip_limit_4 = 1289.235413997
+
+ writing outputs of PDE_clip_limit_5
+Total time PDEclip_limit_5 = 1320.443600447

@@ -1,0 +1,8 @@
+
+ writing outputs of tv_bregman_weight_3
+Total time tv_bregmanweight_3 = 6335.867137126
+
+ writing outputs of tv_bregman_weight_4
+Total time tv_bregmanweight_4 = 6952.37584932
+
+ writing outputs of tv_bregman_weight_5

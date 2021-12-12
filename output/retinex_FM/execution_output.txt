@@ -1,0 +1,63 @@
+
+ writing outputs of retinex_FM__iterations_1
+Total time retinex_FM_iterations_1 = 2338.612242464
+
+ writing outputs of retinex_FM__iterations_2
+Total time retinex_FM_iterations_2 = 2448.72660656
+
+ writing outputs of retinex_FM__iterations_3
+Total time retinex_FM_iterations_3 = 2695.948992092
+
+ writing outputs of retinex_FM__iterations_4
+Total time retinex_FM_iterations_4 = 2896.203898993
+
+ writing outputs of retinex_FM__iterations_5
+Total time retinex_FM_iterations_5 = 3189.319351361
+
+ writing outputs of retinex_FM__iterations_6
+Total time retinex_FM_iterations_6 = 3462.706475461
+
+ writing outputs of retinex_FM__iterations_7
+Total time retinex_FM_iterations_7 = 3758.701837835
+
+ writing outputs of retinex_FM__iterations_8
+Total time retinex_FM_iterations_8 = 4025.278682504
+
+ writing outputs of retinex_FM__iterations_9
+Total time retinex_FM_iterations_9 = 4350.344121169
+
+ writing outputs of retinex_FM__iterations_10
+Total time retinex_FM_iterations_10 = 4604.335462377
+
+ writing outputs of retinex_FM__iterations_11
+Total time retinex_FM_iterations_11 = 4956.811985022
+
+ writing outputs of retinex_FM__iterations_12
+Total time retinex_FM_iterations_12 = 5406.644140151
+
+ writing outputs of retinex_FM__iterations_13
+Total time retinex_FM_iterations_13 = 5726.011295814
+
+ writing outputs of retinex_FM__iterations_14
+Total time retinex_FM_iterations_14 = 5940.464609112
+
+ writing outputs of retinex_FM__iterations_15
+Total time retinex_FM_iterations_15 = 6244.536977938
+
+ writing outputs of retinex_FM__iterations_16
+Total time retinex_FM_iterations_16 = 6463.723715533
+
+ writing outputs of retinex_FM__iterations_17
+Total time retinex_FM_iterations_17 = 6844.258238943
+
+ writing outputs of retinex_FM__iterations_18
+Total time retinex_FM_iterations_18 = 7145.236584136
+
+ writing outputs of retinex_FM__iterations_19
+Total time retinex_FM_iterations_19 = 7432.174588898
+
+ writing outputs of retinex_FM__iterations_20
+Total time retinex_FM_iterations_20 = 7712.474192069
+
+ writing outputs of retinex_FM__iterations_21
+Total time retinex_FM_iterations_21 = 8069.333734687

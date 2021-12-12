@@ -1,0 +1,3 @@
+
+ writing outputs of viola_jones_
+Total time viola_jones = 1573.276293324
