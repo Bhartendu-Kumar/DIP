@@ -1,0 +1,42 @@
+
+ writing outputs of MSR__iter_5_sigmas_10_20_30_40_50
+Total time MSR_iter_5_sigmas_10_20_30_40_50 = 1508.320229978
+
+ writing outputs of MSR__iter_5_sigmas_60_70_80_90_100
+Total time MSR_iter_5_sigmas_60_70_80_90_100 = 1722.061245883
+
+ writing outputs of MSR__iter_5_sigmas_110_120_130_140_150
+Total time MSR_iter_5_sigmas_110_120_130_140_150 = 1856.233468646
+
+ writing outputs of MSR__iter_5_sigmas_160_170_180_190_200
+Total time MSR_iter_5_sigmas_160_170_180_190_200 = 2036.868103828
+
+ writing outputs of MSR__iter_5_sigmas_210_220_230_240_250
+Total time MSR_iter_5_sigmas_210_220_230_240_250 = 2289.965485787
+
+ writing outputs of MSR__iter_5_sigmas_260_270_280_290_300
+Total time MSR_iter_5_sigmas_260_270_280_290_300 = 2583.231120375
+
+ writing outputs of MSR__iter_5_sigmas_310_320_330_340_350
+Total time MSR_iter_5_sigmas_310_320_330_340_350 = 2683.871214222
+
+ writing outputs of MSR__iter_5_sigmas_360_370_380_390_400
+Total time MSR_iter_5_sigmas_360_370_380_390_400 = 2950.20280618
+
+ writing outputs of MSR__iter_10_sigmas_10_20_30_40_50_60_70_80_90_100
+Total time MSR_iter_10_sigmas_10_20_30_40_50_60_70_80_90_100 = 2169.722219439
+
+ writing outputs of MSR__iter_10_sigmas_50_60_70_80_90_100_110_120_130_140
+Total time MSR_iter_10_sigmas_50_60_70_80_90_100_110_120_130_140 = 2388.406222907
+
+ writing outputs of MSR__iter_10_sigmas_90_100_110_120_130_140_150_160_170_180
+Total time MSR_iter_10_sigmas_90_100_110_120_130_140_150_160_170_180 = 2497.452453914
+
+ writing outputs of MSR__iter_10_sigmas_130_140_150_160_170_180_190_200_210_220
+Total time MSR_iter_10_sigmas_130_140_150_160_170_180_190_200_210_220 = 3008.485415427
+
+ writing outputs of MSR__iter_10_sigmas_170_180_190_200_210_220_230_240_250_260
+Total time MSR_iter_10_sigmas_170_180_190_200_210_220_230_240_250_260 = 3461.775853997
+
+ writing outputs of MSR__iter_10_sigmas_210_220_230_240_250_260_270_280_290_300
+cat_0880.jpg is not pre_processedcat_0699.jpg is not converted
