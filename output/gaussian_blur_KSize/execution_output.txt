@@ -1,0 +1,36 @@
+
+ writing outputs of gaussian_blur_k_size_1_sigma_1
+Total time gaussian_blurk_size_1_sigma_1 = 910.428757398
+
+ writing outputs of gaussian_blur_k_size_3_sigma_1
+Total time gaussian_blurk_size_3_sigma_1 = 918.543197233
+
+ writing outputs of gaussian_blur_k_size_5_sigma_1
+Total time gaussian_blurk_size_5_sigma_1 = 919.777327076
+
+ writing outputs of gaussian_blur_k_size_7_sigma_1
+Total time gaussian_blurk_size_7_sigma_1 = 920.973103862
+
+ writing outputs of gaussian_blur_k_size_9_sigma_1
+Total time gaussian_blurk_size_9_sigma_1 = 697.023688606
+
+ writing outputs of gaussian_blur_k_size_11_sigma_1
+Total time gaussian_blurk_size_11_sigma_1 = 829.368398699
+
+ writing outputs of gaussian_blur_k_size_13_sigma_1
+Total time gaussian_blurk_size_13_sigma_1 = 928.52304046
+
+ writing outputs of gaussian_blur_k_size_15_sigma_1
+Total time gaussian_blurk_size_15_sigma_1 = 956.505404463
+
+ writing outputs of gaussian_blur_k_size_17_sigma_1
+Total time gaussian_blurk_size_17_sigma_1 = 953.071442836
+
+ writing outputs of gaussian_blur_k_size_19_sigma_1
+Total time gaussian_blurk_size_19_sigma_1 = 925.140427954
+
+ writing outputs of gaussian_blur_k_size_21_sigma_1
+Total time gaussian_blurk_size_21_sigma_1 = 929.435209282
+
+ writing outputs of gaussian_blur_k_size_23_sigma_1
+Total time gaussian_blurk_size_23_sigma_1 = 929.486153445
