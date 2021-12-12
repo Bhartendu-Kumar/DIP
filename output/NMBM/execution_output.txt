@@ -1,0 +1,8 @@
+
+ writing outputs of NMBM__patchSsize_5_h_0.2_patchDistance_2
+Total time NMBM_patchSsize_5_h_0.2_patchDistance_2 = 3275.487079171
+
+ writing outputs of NMBM__patchSsize_5_h_0.2_patchDistance_3
+Total time NMBM_patchSsize_5_h_0.2_patchDistance_3 = 5963.798474482
+
+ writing outputs of NMBM__patchSsize_5_h_0.2_patchDistance_4

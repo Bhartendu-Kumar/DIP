@@ -1,0 +1,56 @@
+
+ writing outputs of NMBM__patchSsize_5_h_0.3_patchDistance_2
+Total time NMBM_patchSsize_5_h_0.3_patchDistance_2 = 6159.476678691
+
+ writing outputs of NMBM__patchSsize_5_h_0.4_patchDistance_2
+Total time NMBM_patchSsize_5_h_0.4_patchDistance_2 = 6318.3850725
+
+ writing outputs of NMBM__patchSsize_5_h_0.5_patchDistance_2
+Total time NMBM_patchSsize_5_h_0.5_patchDistance_2 = 6339.669107515
+
+ writing outputs of NMBM__patchSsize_5_h_0.6_patchDistance_2
+Total time NMBM_patchSsize_5_h_0.6_patchDistance_2 = 6463.39484598
+
+ writing outputs of NMBM__patchSsize_5_h_0.7_patchDistance_2
+Total time NMBM_patchSsize_5_h_0.7_patchDistance_2 = 6540.807441988
+
+ writing outputs of NMBM__patchSsize_5_h_0.8_patchDistance_2
+Total time NMBM_patchSsize_5_h_0.8_patchDistance_2 = 6728.209048375
+
+ writing outputs of NMBM__patchSsize_10_h_0.2_patchDistance_2
+Total time NMBM_patchSsize_10_h_0.2_patchDistance_2 = 10597.144520119
+
+ writing outputs of NMBM__patchSsize_10_h_0.3_patchDistance_2
+Total time NMBM_patchSsize_10_h_0.3_patchDistance_2 = 11331.318984453
+
+ writing outputs of NMBM__patchSsize_10_h_0.4_patchDistance_2
+Total time NMBM_patchSsize_10_h_0.4_patchDistance_2 = 12043.466657943
+
+ writing outputs of NMBM__patchSsize_10_h_0.5_patchDistance_2
+Total time NMBM_patchSsize_10_h_0.5_patchDistance_2 = 12714.258364715
+
+ writing outputs of NMBM__patchSsize_10_h_0.6_patchDistance_2
+Total time NMBM_patchSsize_10_h_0.6_patchDistance_2 = 13599.172177278
+
+ writing outputs of NMBM__patchSsize_10_h_0.7_patchDistance_2
+Total time NMBM_patchSsize_10_h_0.7_patchDistance_2 = 13892.472156497
+
+ writing outputs of NMBM__patchSsize_10_h_0.8_patchDistance_2
+Total time NMBM_patchSsize_10_h_0.8_patchDistance_2 = 14585.85971507
+
+ writing outputs of NMBM__patchSsize_15_h_0.2_patchDistance_2
+Total time NMBM_patchSsize_15_h_0.2_patchDistance_2 = 14092.423233975
+
+ writing outputs of NMBM__patchSsize_15_h_0.3_patchDistance_2
+Total time NMBM_patchSsize_15_h_0.3_patchDistance_2 = 15324.30993222
+
+ writing outputs of NMBM__patchSsize_15_h_0.4_patchDistance_2
+Total time NMBM_patchSsize_15_h_0.4_patchDistance_2 = 16568.165431503
+
+ writing outputs of NMBM__patchSsize_15_h_0.5_patchDistance_2
+Total time NMBM_patchSsize_15_h_0.5_patchDistance_2 = 17707.647884824
+
+ writing outputs of NMBM__patchSsize_15_h_0.6_patchDistance_2
+Total time NMBM_patchSsize_15_h_0.6_patchDistance_2 = 18799.991039625
+
+ writing outputs of NMBM__patchSsize_15_h_0.7_patchDistance_2
