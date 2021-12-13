@@ -1,9 +1,9 @@
 
 
-from scripts.test_script_ver_4 import *
+from ..scripts.test_script_ver_4 import *
 
-from scripts.retinex import *
-from scripts.retinex import retinex_FM , retinex_SSR, retinex_MSR, retinex_AMSR , retinex_gimp
+from ..scripts.retinex import *
+from ..scripts.retinex import retinex_FM , retinex_SSR, retinex_MSR, retinex_AMSR , retinex_gimp
 
 #signature
 
