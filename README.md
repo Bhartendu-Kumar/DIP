@@ -82,7 +82,12 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Analysis</a></li>
+      <ul>
+        <li><a href="#prerequisites">Observations</a></li>
+        <li><a href="#installation">Results</a></li>
+        <li><a href="#installation">Conclusions</a></li>
+      </ul>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -101,6 +106,7 @@
 
 
 Viola-Jones Detector is an object detection Algorithm (which was originally developed for detecting faces. We are trying to increase (possibly ::exclamation:)  the detection efficiency by applying some pre-processing to images. Thus our **GOAL** is to study the impact of difference pre-processing algos to the viola jones detector.
+  `Bhartendu-Kumar`, `DIP`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -254,6 +260,118 @@ This will create an "output" directory with the result of all preprocessing meth
 (`will update this section`).
 
 _For more examples, please refer to the [Documentation](https://example.com)_
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
+
+
+
+
+
+<!-- GETTING STARTED -->
+## Analysis
+
+This is an example of how you may give instructions on setting up your project locally.
+To get a local copy up and running follow these simple example steps.
+
+### Observations
+The datasets choosen can be divided into 3 categories:
+
+ 1. Easy Difficulty
+	 i. Yale
+	 ii. Caltech
+	 iii. BioID
+2. Medium Difficulty
+	i. MIT CBCL
+	ii. Orl
+3. Hard Difficulty
+	i. SoF
+
+### 
+ **1. Gaussian Blur**
+
+   ```bash
+    There is an inverse realtion between precision and recall.
+   ```
+   Thus blurring will produce many positives (TP and FP). Thus blurring is confusing the detector in identifying features.
+   
+  **Sigma**
+*Seeing the effect of Sigma first (keeping Kernel-Size = 5)*
+
+   
+ - Precision is badly hurt
+ - Performance on hard datasets improve
+ - Confidence value is less than viola jones.
+There is a **DISTINCT** peak at sigma=**8**. *(there is something special about this sigma in natural images)*
+```css
+    Is worse than original viola jones!
+   ```
+
+**Kernel Size**
+*Seeing the effect of Sigma first (keeping Sigma = 1)*
+
+ - There is a very **DISTINCT** convergence at KSize = **11**.
+ - At K = 11 , it is exactly similar to viola jones!
+ - Confidence at K = 11 , is minultely better than original viola jones.
+
+```css
+    k=11 and sigma = 8 are BEST!
+    But is very near to original Algo.
+   ```
+
+ **2. HOMO**
+Seems conservative, i.e. not allowing any detection to be classified as face until very sure!
+   ```css
+    Precision is BETTER than original and Recall is LESS than orifinal!  
+   ```
+   Increases difficulty of viola jones, the sure face features have to be there.
+  
+
+ - **cutoff Freq = 20** is the best performance in parameter space!
+ - There are many many false negatives.
+  ```css
+    Intuitions built:
+    1. Viola Jones has learnt complete intensity coherent pattern for each rectangular feature, not just {interest points}  
+    2. But "most of the learning" is in high freq components, as HOMO has "BETTER PRECISION "! 
+    3. False Negative increases much in HOMO. 
+   ```
+   `Further we did Analysis on Non_Face Datasets and indeed HOMO DO NOT GET CONFUSED on the HIGH FREQUENCY information of face and non-face!.`
+  
+ **3. Retinex FM**
+Illumination normalization seems to predict a lot more faces than original viola jones ! 
+   ```css
+    Inverse realtion between "precision" and recall:! Recall inc and precision decrease.  
+   ```
+   Confuses viola jones as making all regions near to face intensity pattrens, and also increases positive detections (true and false both).
+  
+
+ - **Iterations = 9** is the realtively good in  parameter space!
+ - There are many many false positives.
+  ```css
+    Intuitions built:
+    1. False positive graph have many peaks (some too high) so we choose a "low peak as a balance".  
+    2. But the FALSE POSITIVES have low confidence score and thus "thresholding on confidence (level_weights) ", this method has some promise!  
+   ```
+   `Further we did Analysis on Non_Face Datasets and indeed HOMO DO NOT GET CONFUSED on the HIGH FREQUENCY information of face and non-face!.`
+ ### Results
+
+
+
+### Conclusions
+
+ - Viola Jones Classifier has learnt information about **low frequencies with importance**, i.e. high frequency components like edges/corners are importnat to learn but it is the ***complete pattern in a rectangular feature*** that is important in detection not just high gradient patterns.  
+(this is supported by *degraded* performance of those methods that ignore low frequencies and focus on high frequencies like **HOMO**, **gradient normalization** ,etc)
+- The high frequency information that Viola Jones has learnt are **very accurate of faces**, i.e. those high frequency patterns are *not found in non-faces.*
+- Viola Jones is not illumination invarient. Under severe illumination changes ***face is treated as non-face***. And ***non-faces could be face*** if illumination normalized.
+
+
+# *Pro-Tips:*
+
+ - If you want to be dead sure on having a face : Apply high frequency inf. enriching ones like **HOMO**
+ - If you want to have more regions detected as face: Apply illumination normalization like **Retinex FM**
+
+ 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
