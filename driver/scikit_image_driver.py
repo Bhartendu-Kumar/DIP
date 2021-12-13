@@ -1,7 +1,7 @@
 
 
-from scripts.test_script_ver_4 import *
-from scripts.scikit_image_algorithms import tv_bregman , tv_chambolle , wavelet , bda
+from ..scripts.test_script_ver_4 import *
+from ..scripts.scikit_image_algorithms import tv_bregman , tv_chambolle , wavelet , bda
 
 
 def driver_tv_bregman():
