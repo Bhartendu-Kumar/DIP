@@ -3,7 +3,7 @@
 #it first imports the test script file
 
 #import the script
-from scripts.test_script_ver_4 import *
+from ..scripts.test_script_ver_4 import *
 #the function from this script that we will use is
 #analysis
 #the parameter signature: (string , list)
