@@ -298,7 +298,7 @@ The datasets choosen can be divided into 3 categories:
    
   **Sigma**
 *Seeing the effect of Sigma first (keeping Kernel-Size = 5)*
-
+![precision vs recall](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/gauss/1precall.png)inc in precision and recall over sigma
    
  - Precision is badly hurt
  - Performance on hard datasets improve
@@ -310,7 +310,7 @@ There is a **DISTINCT** peak at sigma=**8**. *(there is something special about 
 
 **Kernel Size**
 *Seeing the effect of Sigma first (keeping Sigma = 1)*
-
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/gauss/2precall.png)percentage inc in precision and recall over kSize
  - There is a very **DISTINCT** convergence at KSize = **11**.
  - At K = 11 , it is exactly similar to viola jones!
  - Confidence at K = 11 , is minultely better than original viola jones.
@@ -321,6 +321,8 @@ There is a **DISTINCT** peak at sigma=**8**. *(there is something special about 
    ```
 
  **2. HOMO**
+ ![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/homo/precall.png)inc in precision and recall 
+ 
 Seems conservative, i.e. not allowing any detection to be classified as face until very sure!
    ```css
     Precision is BETTER than original and Recall is LESS than orifinal!  
@@ -339,6 +341,10 @@ Seems conservative, i.e. not allowing any detection to be classified as face unt
    `Further we did Analysis on Non_Face Datasets and indeed HOMO DO NOT GET CONFUSED on the HIGH FREQUENCY information of face and non-face!.`
   
  **3. Retinex FM**
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/retinexFM/precall.png)inc in precision and recall 
+
+
+
 Illumination normalization seems to predict a lot more faces than original viola jones ! 
    ```css
     Inverse realtion between "precision" and recall:! Recall inc and precision decrease.  
@@ -354,6 +360,11 @@ Illumination normalization seems to predict a lot more faces than original viola
     2. But the FALSE POSITIVES have low confidence score and thus "thresholding on confidence (level_weights) ", this method has some promise!  
    ```
    **4. SSR**
+
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/SSR/precall.png)inc in precision and recall 
+
+
+
 Sightly adversly affects detection. Lowers positive detections (true and false both).  Like HOMO is a high pass filter and have effects but less extremely.
    ```css
     Inverse realtion between "precision" and recall:! Recall dec and precision inc.  
@@ -372,6 +383,8 @@ Sightly adversly affects detection. Lowers positive detections (true and false b
     3. False Positives in Non_face datasets inc. 
    ```
  **5. Bilateral Filter**
+
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/bilateral/precall.png)inc in precision and recall 
 
    ```css
     There is an "inverse" realtion between "precision" and recall:.
@@ -393,6 +406,11 @@ There is a **continuous degradatiopn in performance** thus good to choose sigma=
    ```
 
  **6. CLAHE**
+
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/clahe/precall.png)inc in precision and recall 
+
+
+
 Histogram equalization makes a lot of positive (FP + TP) predictions than original viola jones.
    ```css
     Both precision and recall decrease.  
@@ -409,6 +427,11 @@ Histogram equalization makes a lot of positive (FP + TP) predictions than origin
     3. It is not a stable algo to apply before viola-jones.   
    ```
 **7. TV Chambolle**
+
+
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/tv_chambolle/precall.png)inc in precision and recall 
+
+
 Makes it hard for viola jones to detect!
    ```css
      Precision increase and recall decrease. But the positives are very very less.  
@@ -428,6 +451,9 @@ Makes it hard for viola jones to detect!
  - Not suitable to apply.
 
 **7. MSR**
+
+
+
 Makes it hard for viola jones to detect!
    ```css
      Precision and recall for some datasets are in inverse and for some are in sync.  
@@ -447,6 +473,11 @@ Makes it hard for viola jones to detect!
    ```
    
 **8. NMBN**
+
+
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/NMBN/precall.png)inc in precision and recall
+
+
 Makes it hard for viola jones to detect!
 Very less detections.
    ```css
@@ -471,8 +502,8 @@ Very less detections.
 
 
  ## Results
- ![Precision and recall](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/all/precall.png)
- ![Confidence](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/all/conf.png)
+![Precision and recall](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/all/precall.png) Precision and recall plot (inc from viola jones plotted)
+ ![Confidence](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/all/conf.png) Confidence plot (percentage inc from viola jones plotted)
 
  1. BDA
 	- *Hurting viola jones detector.*
