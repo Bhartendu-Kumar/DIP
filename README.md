@@ -353,23 +353,233 @@ Illumination normalization seems to predict a lot more faces than original viola
     1. False positive graph have many peaks (some too high) so we choose a "low peak as a balance".  
     2. But the FALSE POSITIVES have low confidence score and thus "thresholding on confidence (level_weights) ", this method has some promise!  
    ```
-   `Further we did Analysis on Non_Face Datasets and indeed HOMO DO NOT GET CONFUSED on the HIGH FREQUENCY information of face and non-face!.`
- ### Results
+   **4. SSR**
+Sightly adversly affects detection. Lowers positive detections (true and false both).  Like HOMO is a high pass filter and have effects but less extremely.
+   ```css
+    Inverse realtion between "precision" and recall:! Recall dec and precision inc.  
+   ```
+
+ - Not much better than original viola jones.
+
+  
+
+ - **Sigma = 211** is the realtively good in  parameter space!
+ - There are very few positives.
+  ```css
+    Intuitions built:
+    1. One very curious thing is at sigma=140,  there is a major "drop in detections" (less than 10%) detections and then it again goes back to normal.  
+    2. Thus something very particular to the high frequency image corresponding to gaussian sigma= 140 is there, that makes each region as non-face. So, what viola has learnt is not there. 
+    3. False Positives in Non_face datasets inc. 
+   ```
+ **5. Bilateral Filter**
+
+   ```css
+    There is an "inverse" realtion between "precision" and recall:.
+   ```
+   
+   `Sigma Illuminance is auto estimated as per the intenisty signature of image.`
+  **Sigma Spatial**
+  ```css
+    Intuitions built:
+    1. Less positives. Thus face patterns are being destroyed by smoothing. 
+       
+   ```
+
+   
+ 
+There is a **continuous degradatiopn in performance** thus good to choose sigma=**1**. 
+```css
+    Is worse than original viola jones!
+   ```
+
+ **6. CLAHE**
+Histogram equalization makes a lot of positive (FP + TP) predictions than original viola jones.
+   ```css
+    Both precision and recall decrease.  
+   ```
+   
+  
+
+ - **Clip limit = 2** is the realtively good in  parameter space!
+
+  ```css
+    Intuitions built:
+    1. It varies a lot wrt dataset.  
+    2. TP decreases , FP inc and FN dec slightly.
+    3. It is not a stable algo to apply before viola-jones.   
+   ```
+**7. TV Chambolle**
+Makes it hard for viola jones to detect!
+   ```css
+     Precision increase and recall decrease. But the positives are very very less.  
+   ```
+   
+  
+
+ - **Weight = 3** is the choosen from all
+
+  ```css
+    Intuitions built:
+    1. Constant in parameter space with minor degradation in performance. 
+    2. Very very less detections. 
+       
+   ```
+
+ - Not suitable to apply.
+
+**7. MSR**
+Makes it hard for viola jones to detect!
+   ```css
+     Precision and recall for some datasets are in inverse and for some are in sync.  
+   ```
+   
+  
+
+ - **Number of iterations = 10**
+ - **Sigma list = 90_100_110_120_130_140_150_160_170_180**
+ -  is the choosen from all
+
+  ```css
+    Intuitions built:
+    1. There are regions in parameter space where precision and recall both inc. 
+    2. Also there are corresponding regions where there is slight improvement in confidence score. 
+       
+   ```
+   
+**8. NMBN**
+Makes it hard for viola jones to detect!
+Very less detections.
+   ```css
+     Inverse relationship between precision and recall. Precision inc and recall dec.  
+   ```
+   
+  
+
+ - **parameter : patchSsize = 5 , h  = 0.7, patchDistance = 2** is the choosen from all
+
+  ```css
+    Intuitions built:
+    1. Hurts viola jones. 
+    2. Very less detections. 
+    3. But still have some low freq. components intact and thus is not as extreme as homo.
+       
+   ```
+
+ - Not suitable to apply.
 
 
 
-### Conclusions
+
+ ## Results
+ ![Precision and recall](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/all/precall.png)
+ ![Confidence](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/all/conf.png)
+
+ 1. BDA
+	- *Hurting viola jones detector.*
+	- Precision :	inc (less predictions)
+	- Recall :	dec (more false negatives)
+	- Confidence Score: dec (-7 % of viola )
+	- **Verdict : NO**
+	
+
+ 2. Bilateral
+	- *Mostly not better than viola jones and across dataset variation.*
+	- Precision :	almost same 
+	- Recall :	dec (more false negatives)
+	- Confidence Score: almost viola
+	- **Verdict : Maybe**
+
+ 3. Gaussian Blur
+	- *Slightly an edge in certain datasets, but overall precision goes down.*
+	- Precision :	dec 
+	- Recall :	almost same (this is actually sloightly better)
+	- Confidence Score: same
+	- **Verdict : Maybe**
+
+ 4. HE (histogram equalization)
+	- *Detects more positives (TP and FP)*
+	- Precision :	much dec 
+	- Recall :	almost same
+	- Confidence Score: 5% decrease
+	- **Verdict : NO**
+
+ 5. HOMO (homomorphic)
+	- *Detection rate very low*
+	- Precision :	much inc 
+	- Recall :	much dec
+	- Confidence Score: much dec
+	- **Verdict : Only if very high Precision needed**
+
+ 6. logarithmic intensity stretch
+	- *good recall , same precision*
+	- Precision :	inc or dec
+	- Recall :	inc
+	- Confidence Score: 
+	- **Verdict : Yes**
+ 7. MSR
+	- *precision same, recall dec*
+	- Precision :	same
+	- Recall :	dec
+	- Confidence Score: dec 
+	- **Verdict : NO**
+ 8. logarithmic intensity stretch
+	- *good recall , same precision*
+	- Precision :	inc or dec
+	- Recall :	inc
+	- Confidence Score: same as viola (3% decrease max)
+	- **Verdict : Yes**
+ 9. SSR
+	- *Precision inc and recall is almost same. But total predictions decrease.*
+	- Precision :	inc 
+	- Recall :	same
+	- Confidence Score: decreases (10% max decrease)
+	- **Verdict : Maybe**
+
+ 9. TV Chambolle
+	- *Not desirable.*
+	- Precision :	inc 
+	- Recall :	dec
+	- Confidence Score: much decrease
+	- **Verdict : NO**
+
+ 8. retinex FM
+	- *All metrics very close to original viola jones*
+	- Precision :	almost same (slight dec)
+	- Recall :	inc
+	- Confidence Score: improves
+	- **Verdict : Yes**
+ 4. CLAHE 
+	- *Does much false predictions*
+	- Precision :	much dec 
+	- Recall :	inc
+	- Confidence Score: same as viola
+	- **Verdict : NO**
+
+ 5. NMBN 
+	- *Detection rate very low*
+	- Precision :	much inc 
+	- Recall :	much dec
+	- Confidence Score: much dec
+	- **Verdict : Only if very high Precision needed**
+## Conclusions
 
  - Viola Jones Classifier has learnt information about **low frequencies with importance**, i.e. high frequency components like edges/corners are importnat to learn but it is the ***complete pattern in a rectangular feature*** that is important in detection not just high gradient patterns.  
 (this is supported by *degraded* performance of those methods that ignore low frequencies and focus on high frequencies like **HOMO**, **gradient normalization** ,etc)
 - The high frequency information that Viola Jones has learnt are **very accurate of faces**, i.e. those high frequency patterns are *not found in non-faces.*
 - Viola Jones is not illumination invarient. Under severe illumination changes ***face is treated as non-face***. And ***non-faces could be face*** if illumination normalized.
 
+# Positive-Preprocessings found:
+# 1.  retinex FM (Best)
+# 2. logarithmic intensity stretch
+# 3. SSR
+
 
 # *Pro-Tips:*
 
- - If you want to be dead sure on having a face : Apply high frequency inf. enriching ones like **HOMO**
- - If you want to have more regions detected as face: Apply illumination normalization like **Retinex FM**
+ - If you want to be dead sure on having a face : Apply high frequency inf. enriching ones like **HOMO** or  if denoising then **NMBN**
+ - If you want to have more regions detected as face: Apply dynamic intensity range stretch like **Retinex FM**
+ - If you want to escape from viola-jones, **study the SSR output** at sigma=140, there viola-jones has absolutely no clue. But peculiar thing is at other sigmas it is **normal !!**
+ - Bilateral has high across dataset variation, but good performance. So can be used in non-blind cases.
 
  
 
@@ -377,6 +587,14 @@ Illumination normalization seems to predict a lot more faces than original viola
 
 
 
+<!-- LICENSE -->
+## To-DO
+
+ - [ ] Study what is there in SSR output for sigma= 140. 
+ - [ ] Study Histogram matching to **normal gaussian**
+ - [ ] Write references
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -403,9 +621,7 @@ Project Link: [https://github.com/Bhartendu-Kumar/DIP](https://github.com/Bharte
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
-* []()
-* []()
+ - [ ] Will have to make a comprehensive reference list. 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
