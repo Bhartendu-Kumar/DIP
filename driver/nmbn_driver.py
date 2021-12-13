@@ -1,7 +1,7 @@
 
 
-from scripts.test_script_ver_4 import *
-from scripts.nmbm import nmbm
+from ..scripts.test_script_ver_4 import *
+from ..scripts.nmbm import nmbm
 
 
 def driver_nmbm():
