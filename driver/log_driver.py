@@ -1,7 +1,7 @@
 
 
-from scripts.test_script_ver_4 import *
-from scripts.log import log_intensity_stretch , exponential_constrast_stretch , full_scale_contrast_stretch
+from ..scripts.test_script_ver_4 import *
+from ..scripts.log import log_intensity_stretch , exponential_constrast_stretch , full_scale_contrast_stretch
 
 
 
