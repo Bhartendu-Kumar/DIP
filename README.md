@@ -321,7 +321,7 @@ There is a **DISTINCT** peak at sigma=**8**. *(there is something special about 
    ```
 
  **2. HOMO**
- ![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/homo/precall.png)inc in precision and recall 
+ ![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/homo/precall.png)<p align="center"> inc in precision and recall plot </p>
  
 Seems conservative, i.e. not allowing any detection to be classified as face until very sure!
    ```css
@@ -341,7 +341,7 @@ Seems conservative, i.e. not allowing any detection to be classified as face unt
    `Further we did Analysis on Non_Face Datasets and indeed HOMO DO NOT GET CONFUSED on the HIGH FREQUENCY information of face and non-face!.`
   
  **3. Retinex FM**
-![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/retinexFM/precall.png)inc in precision and recall 
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/retinexFM/precall.png)<p align="center"> inc in precision and recall plot </p> 
 
 
 
@@ -361,7 +361,7 @@ Illumination normalization seems to predict a lot more faces than original viola
    ```
    **4. SSR**
 
-![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/SSR/precall.png)inc in precision and recall 
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/SSR/precall.png)<p align="center"> inc in precision and recall plot </p>
 
 
 
@@ -384,7 +384,7 @@ Sightly adversly affects detection. Lowers positive detections (true and false b
    ```
  **5. Bilateral Filter**
 
-![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/bilateral/precall.png)inc in precision and recall 
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/bilateral/precall.png)<p align="center"> inc in precision and recall plot </p>
 
    ```css
     There is an "inverse" realtion between "precision" and recall:.
@@ -407,7 +407,7 @@ There is a **continuous degradatiopn in performance** thus good to choose sigma=
 
  **6. CLAHE**
 
-![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/clahe/precall.png)inc in precision and recall 
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/clahe/precall.png)<p align="center"> inc in precision and recall plot </p>
 
 
 
@@ -429,7 +429,7 @@ Histogram equalization makes a lot of positive (FP + TP) predictions than origin
 **7. TV Chambolle**
 
 
-![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/tv_chambolle/precall.png)inc in precision and recall 
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/tv_chambolle/precall.png)<p align="center"> inc in precision and recall plot </p>
 
 
 Makes it hard for viola jones to detect!
@@ -475,7 +475,7 @@ Makes it hard for viola jones to detect!
 **8. NMBN**
 
 
-![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/NMBN/precall.png)inc in precision and recall
+![enter image description here](https://github.com/Bhartendu-Kumar/DIP/blob/main/images/results/NMBN/precall.png)<p align="center"> inc in precision and recall plot </p>
 
 
 Makes it hard for viola jones to detect!
