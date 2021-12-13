@@ -1,6 +1,6 @@
 
-from scripts.test_script_ver_4 import *
-from scripts.hist_eq import hist_eq
+from ..scripts.test_script_ver_4 import *
+from ..scripts.hist_eq import hist_eq
 
 def driver_he():
     # making preprocessing_name string
