@@ -1,7 +1,7 @@
 
 
-from scripts.test_script_ver_4 import *
-from scripts.homo import homo
+from ..scripts.test_script_ver_4 import *
+from ..scripts.homo import homo
 
 
 def driver_homo():
