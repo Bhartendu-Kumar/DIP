@@ -2,7 +2,7 @@
 #we will use the test_script_ver_*.py to test the script
 
 #import the script
-from scripts.test_script_ver_4 import *
+from ..scripts.test_script_ver_4 import *
 
 #imported the test script
 
