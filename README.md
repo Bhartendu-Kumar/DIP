@@ -105,7 +105,7 @@
 
 
 
-Viola-Jones Detector is an object detection Algorithm (which was originally developed for detecting faces. We are trying to increase (possibly ::exclamation:)  the detection efficiency by applying some pre-processing to images. Thus our **GOAL** is to study the impact of difference pre-processing algos to the viola jones detector.
+Viola-Jones Detector is an object detection Algorithm (which was originally developed for detecting faces. We are trying to increase (possibly ::exclamation:)  the detection efficiency by applying some pre-processing to images. Thus our **GOAL** is to study the impact of different pre-processing algos to the viola jones detector, see the impact on detection. And present some algorithm that could improve viola jones.
   
 
 <p align="right">(<a href="#top">back to top</a>)</p>
