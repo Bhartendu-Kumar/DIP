@@ -603,6 +603,8 @@ Very less detections.
 # 1.  retinex FM (Best)
 # 2. logarithmic intensity stretch
 # 3. SSR
+# 4. Can use series of preprocessing: 
+## Use HE to first detect all face candidates and then can choose amongst them using HOMO
 
 
 # *Pro-Tips:*
